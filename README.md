@@ -5,6 +5,5 @@
  - Technologies Used
    - **HTML**
    - **CSS**
-
-- **Deployed Surge @**
+**Deployed Surge @**
  
