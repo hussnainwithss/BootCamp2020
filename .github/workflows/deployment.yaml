@@ -33,5 +33,5 @@ jobs:
     - name: Installing Surge
       run: npm install -g surge
     
-    - name: Starting Surge and deploying 
-        run: surge ./ HelloWorld-v1.surge.sh --token ${{secrets.SURGE_TOKEN}}
+    - name: Starting Surge, deploying updated index.html
+      run: surge ./ HelloWorld-v1.surge.sh --token ${{secrets.SURGE_TOKEN}}
