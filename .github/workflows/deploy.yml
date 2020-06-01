@@ -7,16 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploying to surge
     steps:
+      - name: Switching to helloWorld-Surge Branch
       - uses: actions/checkout@v2
         with:
           reg: helloWorld-Surge
       - name: Install Node.js
-        uses: actions/setup-node@v2-beta
-        with:
-          node-version: 12
+        uses: actions/setup-node@v1.4.2
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./ bootcamp_setup_ziakhan.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ HelloWorld-v1.surge.sh.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
           
