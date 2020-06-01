@@ -24,14 +24,14 @@ jobs:
 
     # Installing NodeJS
     - name: Installing NodeJS
-      run: actions/setup-node@v2-beta
+      uses: actions/setup-node@v2-beta
       with:
         node-version: 12
 
 
     # Installing Surge
     - name: Installing Surge
-        run: npm install -g surge
+      run: npm install -g surge
     
-    - name: Starting Surge, deploying updated index.html
+    - name: Starting Surge and deploying 
         run: surge ./ HelloWorld-v1.surge.sh --token ${{secrets.SURGE_TOKEN}}
