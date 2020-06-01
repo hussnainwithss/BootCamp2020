@@ -6,5 +6,5 @@
    - **HTML**
    - **CSS**
 
-**Deployed on Surge @ (http://helloworld-v1.surge.sh/) **
+**Deployed on Surge @ http://helloworld-v1.surge.sh/**
  
